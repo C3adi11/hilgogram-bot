@@ -14,7 +14,7 @@ from aiohttp import web
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = os.getenv('BOT_TOKEN')
+API_TOKEN = os.getenv('BOT_TOKEN') or "7950441922:AAEhDB9gopYhOFmhd0nRrCbej8MtPi9elBI"
 if not API_TOKEN:
     logging.error("Токен бота не найден!")
     exit(1)
